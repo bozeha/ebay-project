@@ -1,0 +1,89 @@
+@import "../assets/stylesVars.scss";
+
+.main-cont {
+  padding: 50px;
+  h1 {
+    margin: 2px 0px 0px 0px;
+    padding-bottom: 30px;
+    line-height: 23px;
+  }
+  .main-article {
+    display: flex;
+    flex-direction: row;
+
+    .left-block {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 385px;
+
+      img {
+        width: 528px;
+        height: 350px;
+      }
+      p {
+        margin: 0px;
+        padding-top: 13px;
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+    }
+    .right-block {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      p {
+        margin: 0px;
+        max-height: 260px;
+        overflow-y: auto;
+      }
+      .buttons-block {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        button {
+          background-color: $buttons-color;
+          padding: 23px 14px;
+          border: none;
+          border-radius: 10px;
+          margin-right: 20px;
+          height: 57px;
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 13px;
+          letter-spacing: 1px;
+          &:hover {
+            background-color: $buttons-color-hover;
+          }
+        }
+      }
+    }
+  }
+  .carousel-block {
+    height: 300px;
+    width: 1155px;
+    padding-top: 28px;
+
+    position: relative;
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 26px;
+      span {
+        color: $brown-text;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-cont {
+    .main-article {
+      flex-direction: column;
+      .right-block {
+        height: 260px;
+      }
+    }
+  }
+}

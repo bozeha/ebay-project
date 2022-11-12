@@ -1,0 +1,77 @@
+@import "../assets/stylesVars.scss";
+
+.main-cont {
+  padding: 50px;
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1066px;
+    h1 {
+      margin: 2px 0px 1px 1px;
+      padding-bottom: 0px;
+      line-height: 23px;
+    }
+    .sort-block {
+      display: flex;
+      flex-direction: row;
+      height: 27px;
+      p {
+        margin: 0px;
+        padding: 7px 10px 0px 0px;
+      }
+      select {
+        height: 24px;
+        margin-top: 4px;
+        width: 132px;
+      }
+    }
+  }
+
+  .weather-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1066px;
+    .weather-box {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      width: 338px;
+      height: 222px;
+      margin-top: 16px;
+      border: 2px solid $pages-button-border;
+      p {
+        padding: 14px 0px 0px 15px;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+        &:nth-of-type(1) {
+          padding-top: 22px;
+        }
+        span {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        span:nth-of-type(1) {
+          display: table-cell;
+          white-space: nowrap;
+        }
+        span:nth-of-type(2) {
+          font-weight: normal;
+          display: table-cell;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .info {
+    p {
+      margin: 0px;
+      padding-bottom: 10px;
+      font-size: 28px;
+    }
+  }
+}

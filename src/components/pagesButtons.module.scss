@@ -1,0 +1,30 @@
+@import "../assets/stylesVars.scss";
+
+.pages-buttons {
+  width: 100%;
+  max-width: 1151px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 20px;
+  button {
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 1px;
+    font-size: 14px;
+    border-width: 1.5px;
+    border-color: $pages-button-border;
+    border-style: solid;
+    cursor: pointer;
+    &.selected {
+      background-color: $button-selected;
+    }
+  }
+}
+.weather-buttons {
+  max-width: 1066px;
+}
